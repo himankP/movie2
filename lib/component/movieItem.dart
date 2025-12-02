@@ -31,7 +31,17 @@ class _movieitmeState extends State<movieitme> {
       child:
           _isLoading
               ? const CircularProgressIndicator()
-              : Image.asset("images/image1.jpg", width: 300, height: 300, fit: BoxFit.contain),
+              : Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: 120,
+                  height: 200,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    image: DecorationImage(image: AssetImage(widget.ImageUrl), fit: BoxFit.cover),
+                  ),
+                ),
+              ),
     );
   }
 }
