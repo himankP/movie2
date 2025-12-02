@@ -28,7 +28,10 @@ class _movieitmeState extends State<movieitme> {
       onTap: () {
         print("Tapped on image");
       },
-      child: Image.asset("images/image1.jpg", width: 300, height: 300, fit: BoxFit.contain),
+      child:
+          _isLoading
+              ? const CircularProgressIndicator()
+              : Image.asset("images/image1.jpg", width: 300, height: 300, fit: BoxFit.contain),
     );
   }
 }
