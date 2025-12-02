@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:movie/Screen/Detail.dart';
 import 'package:movie/Screen/Favourite.dart';
 import 'package:movie/Screen/Homescreen.dart';
 import 'package:movie/Screen/Search.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized(); // Add this line
+  await dotenv.load(fileName: ".env"); // Load environment variables
   runApp(MyApp());
 }
 
