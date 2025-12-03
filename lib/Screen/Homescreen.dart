@@ -112,12 +112,11 @@ class _HomescreenState extends State<Homescreen> {
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: [
-                              movieitme(ImageUrl: 'images/image1.jpg'),
-                              movieitme(ImageUrl: 'images/image1.jpg'),
-                              movieitme(ImageUrl: 'images/image1.jpg'),
-                              movieitme(ImageUrl: 'images/image1.jpg'),
-                              movieitme(ImageUrl: 'images/image1.jpg'),
-                              movieitme(ImageUrl: 'images/image1.jpg'),
+                              movieitme(ImageUrl: 'images/image1.jpg', id: "tt1375666"),
+                              movieitme(ImageUrl: 'images/image1.jpg', id: "tt0816692"),
+                              movieitme(ImageUrl: 'images/image1.jpg', id: "tt0468569"),
+                              movieitme(ImageUrl: 'images/image1.jpg', id: "tt4154796"),
+                              movieitme(ImageUrl: 'images/image1.jpg', id: "tt0133093"),
                             ],
                           ),
                         ),
